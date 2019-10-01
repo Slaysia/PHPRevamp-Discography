@@ -1,0 +1,424 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+/* Core Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #003300;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+
+}
+.headp {
+    
+    opacity: 0.8;
+}
+.content-wrap p {
+    
+    margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.top {
+    
+    opacity: 0.6;
+    z-index: -2;
+    height: 300px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 200px;
+    border: 5px dotted yellow;
+}
+.nav a {
+display: inline-block;
+
+text-decoration: none;
+padding: 5px;
+color: #000;
+margin-top: 20px;
+border-radius: 5%;
+z-index: 1;
+background-color: #f2ceef;
+margin-right: 5px;
+margin-left: 20px;
+
+    
+}
+.nav a:hover{
+    
+    color:#0f6908 ;
+    background:#fff ;
+}
+
+
+.card a {
+    
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #003300;
+    color: #fff;
+    padding: 5px;
+}
+
+/*a:link {
+    
+    background-color: #0f6908;
+}*/
+
+
+p {
+    position: relative;
+  text-align: center;
+opacity: 0.8;
+z-index: 1;
+    
+
+}
+.content-wrap p {
+    
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+
+
+.btn {
+  display: inline-block;
+  
+  color:#0f6908;
+  text-decoration: none;
+  padding: .3em;
+  
+  margin: 0.5em 0;
+ 
+}
+
+
+
+/* Header Showcase */
+
+#head {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  display: grid;
+    
+ 
+}
+
+/*#head .bg-image {
+  position: absolute;
+  background-image:url("aceofbase2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+ 
+}*/
+
+#head h1 {
+  
+  font-size: 2em;
+  
+  margin-top: 10px;
+    
+margin-bottom: 10px;
+}
+
+#head .content-wrap,
+#section-a  .content-wrap {
+  padding: 0 1.5em;
+}
+#section-a1 .content-wrap {
+  padding: 0 1.5em;
+}
+/* Section A */
+
+ #section-a  .content-wrap {
+  background: #003300;
+  color: #fff;
+
+}
+#section-a1 .content-wrap {
+ background: #003300;
+ color: #fff;
+
+}
+.content-wrap {
+  
+    
+    background: #003300;
+}
+
+/* Section B */
+
+#section-b {
+  padding: 1em 1em 1em;
+}
+#section-b1 {
+  padding: 1em 1em 1em;
+}
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+#section-b1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b1 li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #003300;
+  color: #fff;
+  padding: 2em;
+}
+
+/* Section D / Boxes */
+
+#section-d {
+  padding: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+#section-d  {
+  background: #003300;
+  color: #000;
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 2em;
+  
+  color: #fff;
+  
+text-align: center;
+    align-items: center;
+}
+
+
+
+form { font-size: 1.2em;
+       font-family: 'Arial', Helvetica, sans-serif;
+       line-height: 1.5;
+     align-items: center;
+     border: 5px solid #1a1a1a;
+     display: inline-block;
+       }
+    
+    form {
+    
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+.content-title {
+    
+    color: #fff;
+    margin-bottom: 5px;
+    
+}
+.container {
+    padding: 20px;
+    background-color:#003300 ;
+    color: #000;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: #000;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.container h2 {
+    
+    color: #fff;
+}
+    
+
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+     
+   
+  .gird1 { display: grid; grid-template-rows: 1/4}
+
+    
+.nav a {
+display: inline-block;
+text-decoration: none;
+padding: 5px;
+color: #fff;
+border-radius: 5%;
+z-index: 1;
+background-color: #0f6908;
+
+    
+}
+.nav a:hover{
+    
+    color:#0f6908 ;
+    background:#fff ;
+}
+
+  #head .bg-image {
+      
+    position: absolute;
+    background: #333
+      url("aceofbase2.jpg");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 30%;
+  
+     z-index: -1;
+    opacity: 0.5;
+  }
+
+  #section-a  .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+ #section-a1 .content-text {
+   columns: 2;
+   column-gap: 2em;
+ }
+  #section-a  .content-text p {
+    padding-top: 0;
+  }
+#section-a1 .content-text p {
+  padding-top: 0;
+}
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+    
+.content-wrap img {
+        
+        width: 225px;
+        height:225px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+  #section-b1 ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 4;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+  #section-b1 ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b1 li {
+    width: 31%;
+  }
+}
+
+.card img {
+    width:100%;
+    height: auto;
+}
+  .subscribe {
+    
+    color: #fff;
+}
+  
+}
+
+@media screen and (max-width:450px) {
+     
+    .nav a {
+display: inline-block;
+text-decoration: none;
+padding: 5px;
+color: #000;
+margin-top: 10px;
+border-radius: 5%;
+background-color: #e6b9eb;
+margin-bottom: 15px;
+    
+}
+.nav a:hover{
+    
+    color:#0f6908 ;
+    background:#fff ;
+}
+
+    
+}
+  
+
+
