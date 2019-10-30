@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers[] = 'Content-Type: text/plain; charset=utf-8';
     require './includes/form-to-email2.php';
     if ($mailSent) {
-    header('Location: ./index.php');
     header('Location: ./thank_you.php');
 
         exit;

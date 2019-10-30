@@ -1,4 +1,4 @@
-<form action="form-to-email2.php" method="post">
+<form method="post">
                 
     <div class="container">
       <h2 class="subscribe">Subscribe Now!</h2>
@@ -20,9 +20,9 @@
     	<?php if (in_array('email', $missing)) { ?> 
     		<span class="warning">Please enter your Email</span>
     	<?php } ?>
-    <input  type="text" placeholder="Email address" name="mail" required
+    <input  type="text" placeholder="Email address" name="email" required
     <?php if ($missing || $errors) {
-					echo 'value="' . htmlentities($name) . '"';
+					echo 'value="' . htmlentities($email) . '"';
 				} ?>>
     </label>
 
@@ -32,7 +32,7 @@
   </div>
 <br>
   <div class="container btn">
-    <input type="submit" value="Subscribe">
+    <input type="submit" value="Subscribe" name="submit">
   </div>
     
 </form>

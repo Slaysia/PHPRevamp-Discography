@@ -1,6 +1,6 @@
 <?php 
 $current = 'home';
-include("header2.php");
+include("./includes/header2.php");
 ?>
 
 
@@ -12,7 +12,7 @@ include("header2.php");
     <nav class="main-nav">
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="http://site32.wdd.francistuttle.edu/PHPRevamp-Discography/index.php">Home</a>
         </li>
       </ul>
     </nav>
@@ -167,33 +167,12 @@ include("header2.php");
     </div>
        <section class="container-1">
            <div class="container">
-            <form action="action_page.php">
-                
-  <div class="container">
-    <h2 class="subscribe">Subscribe Now!</h2>
-    <p class="subscribe">Ace of Base</p>
-   </div>
-<br>
-  <div class="container">
-    <input  type="text" placeholder="Name" name="name" required>
-    <input  type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input class="subscribe" type="checkbox" checked="checked" name="subscribe"> Newsletter
-    </label>
-  </div>
-<br>
-  <div class="container btn">
-    <input type="submit" value="Subscribe">
-  </div>
-    
-</form>
-</div>
 
-                        
-      </section>                  
+
+                  
 
 
 
 <?php 
-include("footer.php");
+include("./includes/footer.php");
 ?>

@@ -2,9 +2,8 @@
 
   $errors = [];
   $missing = [];
-  print_r($_POST);
 
-if ($_POST['sumbit']) {
+if ($_POST['submit']) {
   $to = 'summersbyink@gmail.com';
   $subject = 'Feedback from Ace of Base';
   $expected = ['name', 'email', 'subscribe'];
@@ -12,8 +11,6 @@ if ($_POST['sumbit']) {
   if (!isset($_POST['subscribe'])) {
       $_POST['subscribe'] = '';
       $errors['subscribe'] = true;
-  } else {
-    echo "sub";
   }
 
   $header[] = 'From: Ace of Base<feedback@example.com>';
@@ -25,8 +22,6 @@ if ($_POST['sumbit']) {
   } else {
     print_r($_POST);
   }
-} else {
-  echo "none";
 }
 ?>
 
