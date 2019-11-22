@@ -27,6 +27,7 @@ include("./includes/language.php");
             <a href="#album2">ALBUM2</a>
             <a href="http://site32.wdd.francistuttle.edu/PHPRevamp-Discography/songlist.php" target="_blank"> SONGLIST</a>
             <a href="#subscription">SUBSCRIPTION</a>
+            <a href="http://site32.wdd.francistuttle.edu/PHPRevamp-Discography/LogIn.php">ADMIN</a>
              
          </nav>
          
