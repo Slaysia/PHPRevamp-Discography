@@ -5,13 +5,20 @@ function OpenCon()
  $dbuser = "student32.site32";
  $dbpass = "ilovesmePS3";
  $db = "site32";
- $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
- 
- return $conn;
+ $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+if( !$connect)
+{
+	die("ERROR: Cannot connect to database $db on server $server
+	using user name $user (".mysqli_connect_errno().
+	", ".mysqli_connect_error().")");
+}
+else
+{
+	print("<p>It worked!</p>");
+}
+
+//place code hre to work with the database
+mysqli_close($connect); //close connection
  }
- 
-function CloseCon($conn)
- {
- $conn -> close();
- }
-   
+?>

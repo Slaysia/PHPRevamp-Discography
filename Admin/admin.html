@@ -27,19 +27,16 @@
                 
           <div class="container">
               <h2 class="subscribe">Admin Log In</h2>
-              <p class="subscribe">Ace of Base</p>
+              <p class="subscribe">Ace of Base SQL Database</p>
           </div>
           <br>
           <div class="container">
-            <input  type="text" placeholder="Name" name="name" required>
-            <input  type="text" placeholder="Email address" name="mail" required>
-            <label>
-              <input class="subscribe" type="checkbox" checked="checked" name="subscribe"> Newsletter
-            </label>
+            <input  type="text" placeholder="Username" name="Username" required>
+            <input  type="text" placeholder="Password" name="Password" required>
           </div>
           <br>
           <div class="container btn">
-            <input type="submit" value="Subscribe">
+            <input type="submit" value="Log In">
           </div>
     
         </form>
@@ -55,10 +52,21 @@
 
 
 
-                  
-
-
-
-<?php 
-include("./includes/footer.php");
-?>
+<!-- Footer -->
+      <footer id="main-footer" class="grid">
+         <div>&copy;
+         <?php
+         // echo date('Y');
+      $startYear = 2018;
+      $thisYear = date('Y');
+      if ($startYear == $thisYear) {
+        echo $startYear;
+      } else {
+        echo "{$startYear}&ndash;{$thisYear}"; 
+      }
+       ?>
+       ACE OF BASE</div>
+         <!---end footer-->
+      </footer>
+   </body>
+</html>
